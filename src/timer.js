@@ -56,7 +56,8 @@ function loadDuration() {
     current = localStorage.getItem("mode");
     if (current === null) {
         localStorage.setItem("mode", 0);
-        remainTime = localStorage.getItem("pomodoro");
+        localStorage.setItem("pomodoro", 25);
+        remainTime = 25;
         remaining.innerHTML = `${remainTime} : 00 `;
         modeStatus.innerHTML = "Pomodoro";
     }
