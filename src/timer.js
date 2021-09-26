@@ -26,6 +26,10 @@ function changeMode() {
         localStorage.setItem("mode", 1);
         modeStatus.innerHTML = "Break";
         remainTime = localStorage.getItem("dBreak");
+        if (remainTime === null) {
+            remainTime = 4;
+            localStorage.setItem("dBreak", 4);
+        }
         remaining.innerHTML = `${remainTime} : 00 `;
     }
     else {
