@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-poll-h"></i>
+            <a href="./menu.html"><i class="fas fa-list"></i></a>
+        </div>
+        <div class="timer">
+            <svg id="circle" onclick="pause()" width="250" height="250" viewbox="0 0 250 250">
+                <path id="border" transform="translate(125, 125)" />
+                <path id="border2" transform="translate(125, 125) scale(.92)" />
+                <path id="loader" transform="translate(125, 125) scale(.83)" />
+            </svg>
+            <span id="status"></span>
+            <div class="mode">
+                <i class="fas fa-arrows-alt-v"></i>
+                <span id="mode_status" onclick="changeMode()"></span>
+            </div>
+            <div class="remaining"></div>
+
+        </div>
+
+    </div>
+
+    <script src="./src/timer.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    color : grey;
+}
+
+a:visited {
+    text-decoration: none;
+}
+.container {
+    text-align: center;
+}
+
+.header {
+    display:flex;
+    justify-content: space-between;
+    height : 50px;
+    color : grey;
+    margin : 15px 20px 0px 20px;
+}
+
+
+svg {
+    display: block;
+    margin: 50px auto;
+}
+
+.status {
+    display: inline-block;
+}
+
+#border 
+{ fill: white }
+
+#loader {
+    fill : white
+}
